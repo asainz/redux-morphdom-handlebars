@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Morphdom TodoList</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    </head>
+    <body>
+        <h1>Todo List</h1>
+
+        <div id="app"></div>
+
+        <script id="main-form-tmpl" type="text/x-handlebars-template">
+            <div>
+                <form action="">
+                    <fieldset>
+                        <div>
+                            Do you want to add a description?
+                            <input type="radio" name="add-description" value="no"  {{{checked false addDescription}}}> No
+                            <input type="radio" name="add-description" value="yes" {{{checked true addDescription}}}> Yes
+                        </div>
+                        {{#if addDescription}}
+                        <div>
+                            Description
+                            <input type="text" name="description" id="description_input" value="{{description}}">
+                        </div>
+                        {{/if}}
+                    </fieldset>
+                </form>
+            </div>
+        </script>
+
+
+        <hr>
+
+
+        <!-- <div id="todos"></div>
+
+        <div>
+            <select id="todoType">
+                <option value="simple">Simple</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+
+        <div id="newTodoContainer"></div>
+
+        <script id="todos-list-tmpl" type="text/x-handlebars-template">
+            <ul>{{#each todos}}<li>{{this}}</li>{{/each}}</ul>
+        </script>
+
+        <script id="add-simple-todo-tmpl" type="text/x-handlebars-template">
+            <div>
+                <input type="text" id="newTodo">
+                <button id="addTodo">Add!</button>
+            </div>
+        </script>
+
+        <script id="add-advanced-todo-tmpl" type="text/x-handlebars-template">
+            <div>
+                <input type="text" id="newTodo">
+                <textarea id="newTodoDescription" cols="30" rows="10"></textarea>
+                <button id="addTodo">Add!</button>
+            </div> -->
+        </script>
+    </body>
+</html>

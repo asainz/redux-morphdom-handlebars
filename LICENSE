@@ -1,6 +1,7 @@
 MIT License
 
 Copyright (c) 2017 Andres Sainz de aja
+create a simple implementation of redux-handlebars-morphdom to update templates and keep state on redux
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
